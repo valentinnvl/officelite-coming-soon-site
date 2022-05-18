@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Officelite coming soon site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sign-up.css">
+  <script src="js/form-validation.js" defer></script>
+  <script src="js/countdown.js" defer></script>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <main>
+      <a href="index.html" class="logo">
+        <img src="assets/shared/logo.svg" alt="Officelite">
+      </a>
+
+      <div class="main">
+        <section>
+          <div class="main-content">
+            <h1>Work smarter. Save time.</h1>
+            <p class="main-text">
+              Easily manage your projects. Get on the list and receive in-app perks available only to early subscribers.
+              We are moving into final development and getting ready for official launch soon.
+            </p>
+          </div>
+
+          <div class="timer-container">
+            <h3>Coming <time datetime="2022-06-01" class="date">1 Jun 2022</time></h3>
+            <div class="timer">
+              <div class="timer-item">
+                <span class="day time">0</span>
+                <p>days</p>
+              </div>
+              <div class="timer-item">
+                <span class="hour time">0</span>
+                <p>hours</p>
+              </div>
+              <div class="timer-item">
+                <span class="minute time">0</span>
+                <p>min</p>
+              </div>
+              <div class="timer-item">
+                <span class="second time">0</span>
+                <p>sec</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <form>
+          <div class="required-box" id="name-box">
+            <input type="text" placeholder="Name" class="required" id="name">
+          </div>
+          <div class="required-box" id="email-box">
+            <input type="email" placeholder="Email Address" class="required" id="email">
+          </div>
+          <div class="custom-select">
+            <p class="selected-item">Basic Pack<span class="price">Free</span></p>
+            <img src="assets/sign-up/icon-arrow-down.svg" class="custom-arrow">
+            <div class="option-list">
+              <p class="option selected">Basic Pack<span class="price">Free</span></p>
+              <p class="option">Pro Pack<span class="price">$9.99</span></p>
+              <p class="option">Ultimate Pack<span class="price">$19.99</span></p>
+            </div>
+          </div>
+          <input type="tel" placeholder="Phone Number">
+          <input type="text" placeholder="Company">
+          <button class="submit-btn">Get on the list</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <div class="bg"></div>
+</body>
+
+</html>

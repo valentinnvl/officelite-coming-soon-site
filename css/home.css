@@ -1,0 +1,271 @@
+body {
+  background-image: url(../assets/home/bg-pattern-header.svg);
+  background-position: top -419px right calc(-350px + (100vw - 1440px) / 2);
+  background-repeat: no-repeat;
+}
+
+h3 {
+  color: var(--white);
+}
+
+.btn {
+  display: inline-block;
+  height: 56px;
+  width: 171px;
+  padding-top: 14px;
+  background-color: var(--primary-clr);
+  font-weight: 700;
+  line-height: 1.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 28px;
+}
+
+.btn:hover {
+  background-color: var(--secondary-clr);
+}
+
+.hero {
+  padding-top: 81px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 102px;
+}
+
+.main-btn {
+  margin-top: 32px;
+  box-shadow: 0 25px 25px -10px rgba(64, 92, 194, .25);
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 184px;
+}
+
+.card {
+  height: 508px;
+  padding: 40px;
+  background-color: var(--white);
+  text-align: center;
+  border-radius: 13px;
+}
+
+.subscription {
+  color: var(--dark-grey);
+}
+
+.price {
+  margin-top: 40px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.price-infos {
+  margin-top: 8px;
+}
+
+.advantages p:not(:first-child) {
+  margin-top: 16px;
+}
+
+.advantages {
+  margin-top: 56px;
+}
+
+.card-btn {
+  margin-top: 32px;
+  background-color: rgba(81, 116, 255, .15);
+  color: var(--primary-clr);
+}
+
+.card-btn:hover {
+  background-color: rgba(81, 116, 255, .35);
+}
+
+.card-blue {
+  background-color: var(--primary-clr);
+  background-image: url(../assets/home/bg-pattern-pricing.svg);
+  background-position: top -379px center;
+  background-repeat: no-repeat;
+  color: var(--white);
+}
+
+.card-blue :is(h2, .subscription) {
+  color: var(--white);
+}
+
+.card-blue .card-btn {
+  background-color: var(--white);
+}
+
+.card-blue .card-btn:hover {
+  background-color: var(--white);
+  color: var(--secondary-clr);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 82px;
+  padding-bottom: 91px;
+}
+
+.timer-item {
+  background-color: var(--dark-grey);
+  color: var(--white);
+}
+
+.timer-item p {
+  opacity: .5;
+}
+
+.bg {
+  inset: auto 0 0 0;
+  height: 603px;
+  background-image: url(../assets/home/bg-pattern-footer.svg);
+  background-position: left calc(-702px + (100vw - 1440px) / 2) bottom -819px;
+}
+
+@media (max-width: 1250px) {
+  body {
+    background-position: left calc(395px + (100vw - 768px) / 2) top -164px;
+    background-size: 666px;
+  }
+
+  .hero {
+    padding-top: 72px;
+  }
+
+  .main {
+    margin-top: 104px;
+  }
+
+  .main-content {
+    max-width: 345px;
+  }
+
+  .illustration {
+    width: 281px;
+  }
+
+  .pricing {
+    grid-template-columns: 1fr;
+    margin-top: 140px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+  .timer {
+    margin-top: 8px;
+  }
+
+  .bg {
+    height: 986px;
+    background-position: center top 15px;
+  }
+}
+
+@media (max-width: 1250px) and (min-width: 751px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "subcription advantages"
+      "subcription advantages"
+      "button advantages";
+    align-items: start;
+    height: 316px;
+    padding: 48px;
+    text-align: left;
+  }
+
+  .subscription {
+    grid-area: subcription;
+  }
+
+  .price {
+    margin-top: 16px;
+  }
+
+  .price-infos {
+    margin-top: 4px;
+  }
+
+  .advantages {
+    grid-area: advantages;
+    margin: 44px 0 0 56px;
+  }
+
+  .card-btn {
+    grid-area: button;
+    align-self: end;
+    margin-top: 0;
+  }
+
+  .card-blue {
+    background-position: center left -319px;
+    background-size: 880px;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    background-position: center top -170px;
+    background-size: 458px;
+  }
+
+  .hero {
+    padding-top: 46px;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+    gap: 64px;
+    margin-top: 80px;
+  }
+
+  .main-btn {
+    margin-top: 24px;
+  }
+
+  .illustration {
+    width: 171px;
+  }
+
+  .pricing {
+    margin-top: 100px;
+  }
+
+  .card {
+    width: auto;
+  }
+
+  .footer {
+    gap: 40px;
+  }
+
+  .timer {
+    margin-top: 18px;
+  }
+
+  .bg {
+    height: 1248px;
+    background-position: center top 156px;
+  }
+}

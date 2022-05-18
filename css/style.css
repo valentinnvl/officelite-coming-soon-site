@@ -1,0 +1,154 @@
+:root {
+  --primary-clr: #5175FF;
+  --secondary-clr: #829CFF;
+  --dark-grey: #333950;
+  --black: #25293A;
+  --light-grey: #747B95;
+  --red: #F05B5B;
+  --white: #FFF;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-color: #FAFAFA;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: var(--light-grey);
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4rem;
+  color: var(--dark-grey);
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  color: var(--dark-grey);
+}
+
+h3 {
+  line-height: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+p {
+  line-height: 1.75rem;
+}
+
+.page-wrap {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  height: 30px;
+  width: 155px;
+}
+
+.main-content {
+  max-width: 540px;
+}
+
+.main-text {
+  margin-top: 24px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.date {
+  color: var(--primary-clr);
+}
+
+.timer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  height: 128px;
+  width: 448px;
+  font-weight: 700;
+}
+
+.timer-item {
+  padding: 18px 10px;
+  text-align: center;
+  border-radius: 13px;
+}
+
+.time {
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+.bg {
+  position: absolute;
+  background-color: var(--black);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media (max-width: 1250px) {
+  .page-wrap {
+    width: 689px;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .main-text {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+
+  .bg {
+    background-size: 1454px;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    text-align: center;
+  }
+
+  .page-wrap {
+    width: 328px;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .timer {
+    height: 92px;
+    width: 328px;
+  }
+
+  .timer-item {
+    padding: 8px;
+    font-size: .75rem;
+    border-radius: 4px;
+  }
+
+  .time {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .bg {
+    background-size: 1202px;
+  }
+}
